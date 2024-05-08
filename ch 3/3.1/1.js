@@ -1,1 +1,1 @@
-console.log("Red and White \nA Transformation in Education")
+console.log("Red and White \nA Transformation in Education");
