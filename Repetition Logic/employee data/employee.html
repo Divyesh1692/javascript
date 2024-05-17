@@ -4,27 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Data</title>
+    <script src="employee.js"></script>
 </head>
 <body>
     <h1>Employee Data</h1>
     <hr>
-    <strong>Employee 1 : <input type="text" placeholder="Enter Name"></strong>
-    <select name="role" id="role" onchange="select()">
+    <strong>Employee 1 : <input type="text" placeholder="Enter Name" id="n1"></strong>
+    <select name="role" id="e1" onchange="select1()">
     <option value="Manager">Manager</option>
     <option value="Accountant">Accountant</option>
     <option value="Cashier">Cashier</option>
     <option value="Receptionist">Receptionist</option>
     <option value="janitor">janitor</option>
     </select>
-    <input type="text" placeholder="Enter Salary"><br><br>
-    <strong>Employee 2 : <input type="text" placeholder="Enter Name"></strong>
-    <select name="role" id="role" onchange="select()">
+    <input type="text" placeholder="Enter Salary" id="s1"><br><br>
+   
+    <strong>Employee 2 : <input type="text" placeholder="Enter Name" id="n2"></strong>
+    <select name="role" id="e2" onchange="select2()">
     <option value="Manager">Manager</option>
     <option value="Accountant">Accountant</option>
     <option value="Cashier">Cashier</option>
     <option value="Receptionist">Receptionist</option>
     <option value="janitor">janitor</option>
     </select>
-    <input type="text" placeholder="Enter Salary">
+    <input type="text" placeholder="Enter Salary" id="s2"><br><br>
+    
+    <strong>Employee 3 : <input type="text" placeholder="Enter Name" id="n3"></strong>
+    <select name="role" id="e3" onchange="select3()">
+    <option value="Manager">Manager</option>
+    <option value="Accountant">Accountant</option>
+    <option value="Cashier">Cashier</option>
+    <option value="Receptionist">Receptionist</option>
+    <option value="janitor">janitor</option>
+    </select>
+    <input type="text" placeholder="Enter Salary" id="s3"><br><br>
+    
+    <strong>Employee 4 : <input type="text" placeholder="Enter Name" id="n4"></strong>
+    <select name="role" id="e4" onchange="select4()">
+    <option value="Manager">Manager</option>
+    <option value="Accountant">Accountant</option>
+    <option value="Cashier">Cashier</option>
+    <option value="Receptionist">Receptionist</option>
+    <option value="janitor">janitor</option>
+    </select>
+    <input type="text" placeholder="Enter Salary" id="s4"><br><br>
+    
+    <strong>Employee 5 : <input type="text" placeholder="Enter Name" id="n5"></strong>
+    <select name="role" id="e5" onchange="select5()">
+    <option value="Manager">Manager</option>
+    <option value="Accountant">Accountant</option>
+    <option value="Cashier">Cashier</option>
+    <option value="Receptionist">Receptionist</option>
+    <option value="janitor">janitor</option>
+    </select>
+    <input type="text" placeholder="Enter Salary" id="s5"><br><br>
+    <button type="button" onclick="salary()">Total Salary</button>
+    <hr>
+    <strong><p id="sal"></p></strong>
+    <hr>
+    
+
+
 </body>
 </html>

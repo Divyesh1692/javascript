@@ -1,5 +1,7 @@
 function result()
 {
+    let sstd = document.getElementById('std').value;
+    let sname = document.getElementById('name').value;
     let maths = parseInt(document.getElementById('maths').value);
     let sci = parseInt(document.getElementById('science').value);
     let guj = parseInt(document.getElementById('gujrati').value);
@@ -35,9 +37,15 @@ function result()
     else {
         grade = 'Fail';
     }    
-document.getElementById('total').innerHTML= total+" / 500";
-document.getElementById('per').innerHTML=per;
-document.getElementById('grade').innerHTML=grade;
-
+document.getElementById('total').innerHTML= "Total : "+ total+" / 500";
+document.getElementById('sname').innerHTML= "Name : "+sname;
+document.getElementById('sstd').innerHTML= "Standard : "+sstd;
+document.getElementById('per').innerHTML="Percentage : "+per;
+document.getElementById('grade').innerHTML="Grade : "+grade;
+document.getElementById('m').innerHTML = "Maths : "+maths +" /100";
+document.getElementById('s').innerHTML = "Science : "+sci +"/ 100";
+document.getElementById('g').innerHTML = "Gujrati : "+ guj +"/ 100";
+document.getElementById('e').innerHTML = "English : "+eng +"/ 100";
+document.getElementById('c').innerHTML = "Computer : "+comp +"/ 100";
 
 }
