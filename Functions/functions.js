@@ -51,3 +51,15 @@ function odd_even()
     document.getElementById('res').innerHTML = "Given Nimber Is : "+res;
 
 }
+
+function product()
+{
+    let a = parseInt(document.getElementById('n1').value);
+    let b = parseInt(document.getElementById('n2').value);
+    let c = parseInt(document.getElementById('n3').value);
+    let d = parseInt(document.getElementById('n4').value);
+    let e = parseInt(document.getElementById('n5').value);
+
+    let pro = a*b*c*d*e;
+    document.getElementById('res').innerHTML = "Product of Given Numbers Is : "+pro;
+}

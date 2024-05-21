@@ -1,4 +1,4 @@
-let a = 10;
-console.log(a);
-let a = 20;
-console.log(a);
+let number = 10;
+console.log(number);
+number = 20;
+console.log(number);
