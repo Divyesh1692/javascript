@@ -1,17 +1,7 @@
-function sum()
-{
-    let n = parseInt(document.getElementById('n1').value);
-    sum_of_n(n);
-    
-}
-function sum_of_n(n)
-{
-    let res = document.getElementById('res');
-    parseInt(res.innerHTML += n);
-    
-
-    if(n>=1)
-        {
-            sum_of_n(n);
-        }
-}
+const sum_of_n = (n) => (n==1 ? 1 : n+sum_of_n(n-1));
+const sum = () => 
+    {
+        let value = parseInt(document.getElementById('n1').value);
+        let sum = sum_of_n(value);
+        document.getElementById('res').innerHTML = "Sum : "+sum;
+    }
