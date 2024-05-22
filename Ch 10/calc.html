@@ -10,9 +10,9 @@
     <center>
         <h1>Calsulator</h1>
         <hr>
-        <table border="2">
+        <table border="4" cellpadding="5" cellspacing="5">
             <tr>
-                <td colspan="5">
+                <td colspan="5" >
                     <p id="dis"></p>
                 </td>
             </tr>
@@ -33,9 +33,7 @@
                 <td>
                     <input type="button" value="-" onclick="Button('-')" >
                 </td>
-                <td>
-                    <input type="button" value="=" onclick="Button('=')" >
-                </td>
+                
                 
             </tr>
             <tr>
@@ -66,12 +64,26 @@
                     <input type="button" value="9" onclick="Button('9')" >
                 </td>
                 <td>
-                    <input type="button" value="0" onclick="Button('0')" >
-                </td>
-                <td>
                     <input type="button" value="%" onclick="Button('%')" >
                 </td>
+                <td>
+                    <input type="button" value="=" onclick="Button('=')" >
+                </td>
 
+            </tr>
+            <tr>
+                <td >
+                    <input type="button" value="0" onclick="Button('0')" >
+                </td>
+                <td >
+                    <input type="button" value="00" onclick="Button('00')" >
+                </td>
+                <td >
+                    <input type="button" value="000" onclick="Button('000')" >
+                </td>
+                <td >
+                    <input type="button" value="Clear" onclick="Button('clear')" >
+                </td>
             </tr>
             
         </table>

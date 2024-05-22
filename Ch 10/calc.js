@@ -5,27 +5,11 @@ function Button(data)
     
   if (data == "=") {
     dis.innerHTML = eval(value);
-  } 
-  else if (data == "+")
-  {
-    dis.innerHTML += data;
-  }
-  else if (data == "-")
-    {
-      dis.innerHTML -= data;
-    }
-  else if (data == "*")
-  {
-    dis.innerHTML *= data;
-  }
-  else if (data == "/")
-    {
-      dis.innerHTML /= data;
-    } 
- else if (data == "%")
-  {
-    dis.innerHTML %= data;
   }    
+  else if(data == "clear")
+    {
+      dis.innerHTML = "";
+    }
   else {
     dis.innerHTML += data;
   }
