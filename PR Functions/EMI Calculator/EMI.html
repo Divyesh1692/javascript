@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <script src="emi.js"></script>
+</head>
+<body>
+  <center>
+    <h1>EMI Calculator</h1>
+    <hr>
+    <table border="2" cellspacing="3" cellpadding="10">
+   <tr>
+    <td><strong>Loan Amount  </strong> </td>
+    <td><input type="number" id="p" placeholder="Enter Loan Amount"></td>
+   </tr>
+   <tr>
+    <td><strong>Rate Of Interest (%)</td>
+    <td></strong><input type="number" id="r" placeholder="Enter Rate Of Interest"></td>
+    </tr>
+    <tr>
+    <td><strong>Loan Tenure (Years) </strong> </td>
+    <td><input type="number" id="t" placeholder="Enter Tenure(Years)"></td>
+    </tr>
+    <tr>
+        <td><strong>Loan EMI</strong> </td>
+        <td><strong><p id="res"></p></strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="button" value="------------------------------  Get EMI  -------------------------------" onclick="emi()"></td>
+    </tr>
+    </table>
+</center>
+</body>
+</html>
