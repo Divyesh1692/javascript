@@ -18,5 +18,4 @@ function remove()
     let item = document.getElementById('2').value;
     console.log(item);
     delete list[0];
-    console.log(list.indexOf("Apple"));
 }
