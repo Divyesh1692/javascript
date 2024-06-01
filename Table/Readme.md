@@ -4,5 +4,5 @@ It Will Automatically Add It Into The Employee Table.
 
 ## Screenshots
 
-![Employee Data]("https://github.com/Divyesh1692/javascript/blob/master/Table/table.png?raw=true")
+![Employee Data](https://github.com/Divyesh1692/javascript/blob/master/Table/table.png?raw=true)
 
