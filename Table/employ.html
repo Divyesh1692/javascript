@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+</head>
+<body>
+   <center> <h1>Employee Data</h1>
+    <hr>
+    <table id="inp" border="2" cellspacing="5" cellpadding="5">
+   <tr> 
+        <td>
+           <strong>Employee Id</strong>
+        </td>
+        <td>
+            <strong>Employee Name</strong>
+        </td>
+        <td>
+            <strong>Designation</strong>
+        </td>
+        <td>
+            <strong>Salary</strong>
+        </td>
+    </tr>
+       <tr> 
+        <td><input type="text" id="i" placeholder="Enter Id"></td>
+        <td><input type="text" id="n" placeholder="Enter Name" ></td>
+        <td>
+            <select name="Designation" id="des">
+                <optgroup label="Designation">
+                    <option value="Admin" >Admin</option>
+                    <option value="Manager" >Manager</option>
+                    <option value="Team Leader" >Team Leader</option>
+                    <option value="Executive" >Executive</option>
+                    <option value="Assistant" >Assistant</option>
+                        
+                </optgroup>
+            </select>
+        </td>
+        <td><input type="text" id="s" placeholder="Enter Salary"></td>
+    </tr>    
+</table>
+<br>
+<input type="button" value="Submit" onclick="d()">
+<hr>
+<table id="op" border="2" cellspacing="5" cellpadding="5">
+    <tr> 
+        <td>
+           <strong>Employee Id</strong>
+        </td>
+        <td>
+            <strong>Employee Name</strong>
+        </td>
+        <td>
+            <strong>Designation</strong>
+        </td>
+        <td>
+            <strong>Salary</strong>
+        </td>
+    </tr>
+</table>
+</center>
+</body>
+<script src="emp.js"></script>
+</html>
