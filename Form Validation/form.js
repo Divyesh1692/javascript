@@ -1,5 +1,8 @@
 function validation() {
   let name = document.querySelector("#name").value;
+  let gender = document.querySelector("#gen").value;
+  let hobby = document.querySelector("#hobby").value;
+  let date = document.querySelector("#date").value;
   let email = document.querySelector("#email").value;
   let pass = document.querySelector("#pass").value;
 
@@ -9,6 +12,28 @@ function validation() {
     document.querySelector("#nameerror").style.color = "Red";
   } else {
     document.querySelector("#nameerror").innerHTML = "";
+  }
+
+  if (gender == null || gender == "") {
+    document.querySelector("#generror").innerHTML = "Please Enter Gender";
+    document.querySelector("#generror").style.color = "Red";
+  } else {
+    document.querySelector("#generror").innerHTML = "";
+  }
+
+  if (hobby == null || hobby == "") {
+    document.querySelector("#hobbyerror").innerHTML = "Please Enter Hobby";
+    document.querySelector("#hobbyerror").style.color = "Red";
+  } else {
+    document.querySelector("#hobbyerror").innerHTML = "";
+  }
+
+  if (date == null || date == "") {
+    document.querySelector("#dateerror").innerHTML =
+      "Please Enter Date Of Birth";
+    document.querySelector("#dateerror").style.color = "Red";
+  } else {
+    document.querySelector("#dateerror").innerHTML = "";
   }
 
   // Email Validation
