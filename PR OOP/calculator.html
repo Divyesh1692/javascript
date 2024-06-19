@@ -3,92 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <script src="calculator.js"></script>
+    <title>Simple Calculator</title>
 </head>
 <body>
     <center>
         <h1>Calculator</h1>
-        <hr>
-        <table border="4" cellpadding="5" cellspacing="5">
+            <table border="2" cellpadding="5" cellspacing="3">
+                <tr>
+                    <td colspan="4">
+                        <div id="display">0</div>
+                    </td>
+                </tr>
             <tr>
-                <td colspan="5" >
-                    <p id="dis"></p>
-                </td>
+                <td align="center"><button onclick="calculator.clear()">C</button></td>
+                <td align="center"><button onclick="calculator.delete()">DEL</button></td>
+                <td align="center"><button onclick="calculator.appendValue('/')">/</button></td>
+                <td align="center"><button onclick="calculator.appendValue('*')">*</button></td>
             </tr>
             <tr>
-                <td>
-                    <input type="button" value="1" onclick="Button('1')" >
-                </td>
-                <td>
-                    <input type="button" value="2" onclick="Button('2')" >
-                </td><td>
-                    <input type="button" value="3" onclick="Button('3')" >
-                </td>
-           
-                <td>
-                    <input type="button" value="+" onclick="Button('+')" >
-                </td>
-
-                <td>
-                    <input type="button" value="-" onclick="Button('-')" >
-                </td>
-                
-                
+                <td align="center"><button onclick="calculator.appendValue('7')">7</button></td>
+                <td align="center"><button onclick="calculator.appendValue('8')">8</button></td>
+                <td align="center"><button onclick="calculator.appendValue('9')">9</button></td>
+                <td align="center"><button onclick="calculator.appendValue('-')">-</button></td>
             </tr>
             <tr>
-                <td>
-                    <input type="button" value="4" onclick="Button('4')" >
-                </td>
-                <td>
-                    <input type="button" value="5" onclick="Button('5')" >
-                </td>
-                <td>
-                    <input type="button" value="6" onclick="Button('6')" >
-                </td>
-                <td>
-                    <input type="button" value="*" onclick="Button('*')" >
-                </td>
-                <td>
-                    <input type="button" value="/" onclick="Button('/')" >
-                </td>
+                <td align="center"><button onclick="calculator.appendValue('4')">4</button></td>
+                <td align="center"><button onclick="calculator.appendValue('5')">5</button></td>
+                <td align="center"><button onclick="calculator.appendValue('6')">6</button></td>
+                <td align="center"><button onclick="calculator.appendValue('+')">+</button></td>
             </tr>
             <tr>
-                <td>
-                    <input type="button" value="7" onclick="Button('7')" >
-                </td>
-                <td>
-                    <input type="button" value="8" onclick="Button('8')" >
-                </td>
-                <td>
-                    <input type="button" value="9" onclick="Button('9')" >
-                </td>
-                <td>
-                    <input type="button" value="%" onclick="Button('%')" >
-                </td>
-                <td>
-                    <input type="button" value="=" onclick="Button('=')" >
-                </td>
-
+                <td align="center"><button onclick="calculator.appendValue('1')">1</button></td>
+                <td align="center"><button onclick="calculator.appendValue('2')">2</button></td>
+                <td align="center"><button onclick="calculator.appendValue('3')">3</button></td>
+                <td align="center"><button onclick="calculator.percentage()">%</button></td>
             </tr>
             <tr>
-                <td >
-                    <input type="button" value="0" onclick="Button('0')" >
-                </td>
-                <td >
-                    <input type="button" value="00" onclick="Button('00')" >
-                </td>
-                <td >
-                    <input type="button" value="000" onclick="Button('000')" >
-                </td>
-                <td >
-                    <input type="button" value="Clear" onclick="Button('clear')" >
-                </td>
+                <td align="center"><button onclick="calculator.appendValue('0')">0</button></td>
+                <td align="center"><button onclick="calculator.appendValue('.')">.</button></td>
+                <td align="center"><button onclick="calculator.calculate()">=</button></td>
             </tr>
-            
-        </table>
-
+    </table>
     </center>
-    
 </body>
+<script src="calculator.js"></script>
 </html>
