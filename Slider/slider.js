@@ -24,4 +24,3 @@ function Slider(num) {
 
   slides[num].style.display = "block";
 }
-setInterval(Slider, 1000);
