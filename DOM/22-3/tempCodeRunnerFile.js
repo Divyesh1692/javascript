@@ -1,0 +1,1 @@
+inpIndex.type = "hidden";
