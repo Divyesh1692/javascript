@@ -17,16 +17,16 @@ function signUp() {
 }
 
 function Login() {
+  let data = Array();
+
   let user = document.getElementById("username").value;
   let pass = document.getElementById("password").value;
-  let data = JSON.parse(window.localStorage.getItem("data")) || [];
+  data = JSON.parse(window.localStorage.getItem("data")) || [];
 
   let u = data.find((u) => u.user == user && u.pass == pass);
-
+  window.localStorage.setItem("currentUser", JSON.stringify(user));
   if (u) {
-    alert("Login successful!");
-    // document.getElementById("welcome").innerHTML = user;
-    window.location.href = "home.html";
+    window.location.href = "Home/home.html";
   } else {
     alert("Invalid username or password.");
   }
