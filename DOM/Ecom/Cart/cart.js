@@ -27,7 +27,11 @@ function displayCart() {
         `;
     });
     let totalDiv = document.getElementById("Total");
-    totalDiv.innerHTML = `<h2 id="total"></h2>`;
+    totalDiv.innerHTML = `<h3>Use Coupon FLAT10 for 10% OFF</h3>
+    <input type="text" id="coupon" placeholder="Enter Coupon">
+    <button onclick ="coupon()">Apply Coupon </button><br>
+    <span id="save"></span>
+    <h2 id="total"></h2>`;
     total();
   }
 }
@@ -97,7 +101,7 @@ function updateQty(id) {
   displayCart();
 }
 
-function total() {
+function calculate() {
   cartProducts = JSON.parse(window.localStorage.getItem(`${user}-cart`)) || [];
   let total = 0,
     price,
@@ -108,6 +112,49 @@ function total() {
     Qty = parseInt(cartProducts[i].qty);
     amount = price * Qty;
     total = total + amount;
+  }
+  return total;
+  // let dis = document.getElementById("coupon").value;
+  // if (dis == "FLAT10") {
+  //   save = parseFloat((total * 10) / 100);
+  //   total = total - save;
+  //   document.getElementById(
+  //     "save"
+  //   ).innerHTML = `<b><i>You Saved : $ ${save.toFixed(2)}</i></b>`;
+  // }
+}
+
+function total() {
+  total = calculate();
+  document.getElementById("total").innerHTML =
+    "Total Price : $" + total.toFixed(2);
+}
+document.getElementById("total").innerHTML =
+  "Total Price : $" + total.toFixed(2);
+
+function coupon() {
+  // cartProducts = JSON.parse(window.localStorage.getItem(`${user}-cart`)) || [];
+  // let total = 0,
+  //   price,
+  //   Qty,
+  //   amount,
+  //   save = 0;
+  // for (let i = 0; i < cartProducts.length; i++) {
+  //   price = parseFloat(cartProducts[i].price);
+  //   Qty = parseInt(cartProducts[i].qty);
+  //   amount = price * Qty;
+  //   total = total + amount;
+  // }
+  let total = calculate();
+  let dis = document.getElementById("coupon").value;
+  if (dis == "FLAT10") {
+    save = parseFloat((total * 10) / 100);
+    total = total - save;
+    document.getElementById(
+      "save"
+    ).innerHTML = `<b><i>You Saved : $ ${save.toFixed(2)}</i></b>`;
+  } else {
+    document.getElementById("save").innerHTML = `Please Enter Valid Coupon`;
   }
   document.getElementById("total").innerHTML =
     "Total Price : $" + total.toFixed(2);
