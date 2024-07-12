@@ -125,12 +125,12 @@ function calculate() {
 }
 
 function total() {
-  total = calculate();
+  let total = calculate();
   document.getElementById("total").innerHTML =
     "Total Price : $" + total.toFixed(2);
+
+  displayCart();
 }
-document.getElementById("total").innerHTML =
-  "Total Price : $" + total.toFixed(2);
 
 function coupon() {
   // cartProducts = JSON.parse(window.localStorage.getItem(`${user}-cart`)) || [];
