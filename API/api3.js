@@ -22,8 +22,9 @@ function displayData() {
 
   myData.forEach((e, i) => {
     let tRow = document.createElement("tr");
+    tRow.align = "center";
     tRow.innerHTML = `<td><img src="${e.thumbnail}"></td>
-    <td>${e.title}</td><td>${e.price}</td>
+    <td><b>${e.title}<b></td><td><b>$${e.price}<b></td>
     `;
     Table.append(tRow);
   });
