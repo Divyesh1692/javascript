@@ -7,17 +7,18 @@ document.getElementById("sbm").addEventListener("click", function (event) {
 
   let text = document.getElementById("inp-data").value;
   let target = document.getElementById("inp-lang").value;
+  let source = document.getElementById("source-lang").value;
 
   const url = "https://text-translator2.p.rapidapi.com/translate";
   const data = new FormData();
-  data.append("source_language", "en");
+  data.append("source_language", source);
   data.append("target_language", target);
   data.append("text", text);
 
   const options = {
     method: "POST",
     headers: {
-      "x-rapidapi-key": "2e59e3a545mshd803fd1ed71a23cp1eb9c0jsne0d6a0bc95b6",
+      "x-rapidapi-key": "a6862656a1msh8a59c1ba83f8a63p1bb3c5jsn6e8a436419e3",
       "x-rapidapi-host": "text-translator2.p.rapidapi.com",
     },
     body: data,
@@ -37,7 +38,7 @@ const loadLanguages = async () => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "2e59e3a545mshd803fd1ed71a23cp1eb9c0jsne0d6a0bc95b6",
+      "x-rapidapi-key": "a6862656a1msh8a59c1ba83f8a63p1bb3c5jsn6e8a436419e3",
       "x-rapidapi-host": "text-translator2.p.rapidapi.com",
     },
   };
@@ -75,3 +76,23 @@ const loadLanguages = async () => {
 };
 
 loadLanguages();
+
+function detectLang() {
+  let text = document.getElementById("inp-data").value;
+  let source = document.getElementById("source-lang");
+  const url = `https://translate-all-languages.p.rapidapi.com/detect?text=${text}`;
+  const options = {
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "a6862656a1msh8a59c1ba83f8a63p1bb3c5jsn6e8a436419e3",
+      "x-rapidapi-host": "translate-all-languages.p.rapidapi.com",
+    },
+  };
+
+  fetch(url, options)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      source.value = data.langDetect;
+    });
+}

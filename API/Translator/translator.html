@@ -11,10 +11,12 @@
       <form method="post" class="op">
         <h3>Translator</h3>
         <textarea name="" id="inp-data" cols="50" rows="5" placeholder="Enter Text" class="in"></textarea><br>
-        <input type="text" class="in" id="inp-lang" placeholder="Enter Language or Select"/> <br /><br>
+        <input type="text" id="source-lang" class="in" placeholder="Enter Text Language or Detect" >
+        <input type="button" id="detect" class="btn" value="Detect Language" onclick="detectLang()"><br><br>
+        <label>Translate Into : </label><input type="text" class="in" id="inp-lang" placeholder="Enter Language or Select"/> <br /><br>
         <div id="all-lang" class="lan" style="overflow-x: scroll;height: 100%; "></div><br>
         <button type="submit" class="btn" id="sbm">TRANSLATE</button>
-        <p id="res" class="res"></p>
+        <p id="res"></p>
       </form>
     </center>
   </body>
