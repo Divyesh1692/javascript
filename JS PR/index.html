@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Management</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <button onclick="showAddProductForm()">Add New Product</button>
+            <input type="text" id="search" placeholder="Search by title" oninput="searchProducts()">
+            <select id="sort-price" onchange="sortProductsByPrice()">
+                <option value="">Sort by price</option>
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+            <select id="sort-category" onchange="sortProductsByCategory()">
+                <option value="">Sort by category</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="books">Books</option>
+            </select>
+        </section>
+
+        <section id="product-form-section" class="hidden">
+            <h2 id="form-title">Add Product</h2>
+            <form id="product-form" onsubmit="submitProductForm(event)">
+                <input type="hidden" id="product-id">
+                <input type="text" id="product-title" placeholder="Title" required>
+                <input type="number" id="product-price" placeholder="Price" required>
+                <input type="text" id="product-image" placeholder="Image URL" required>
+                <input type="text" id="product-category" placeholder="Category" required>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="hideProductForm()">Cancel</button>
+            </form>
+        </section>
+
+        <section id="product-list" class="product-container"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
