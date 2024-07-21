@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <h2>
+        Product Management
+    </h2> 
+    <input type="text" placeholder="Serach Product" id="search" oninput="searchP()">
+    <select name="sort" value="Sort By Price" id="sortP" onchange="sortP()">
+        <option value="">Sort By Price</option>
+        <option value="asc">Low to high</option>
+        <option value="desc">high to Low </option>
+
+    </select>
+    <select name="sort" value="Sort By Category" id="sortC" onchange="sortC()">
+        <option>Sort By Category</option>
+        <option value="electronics">Electronics</option>
+        <option value="books">Books</option>
+        <option value="fashion">Fashion</option>
+
+    </select>
+    <hr>
+    <h2 id="h">Add New Product</h2>
+    <input type="number" id="Id" placeholder="Enter Product Id" hidden>
+    <input type="text" id="t" placeholder="Enter Title">
+    <input type="number" id="p" placeholder="Enter Price">
+    <input type="text" id="i" placeholder="Enter Image URL">
+    <input type="text" id="c" placeholder="Enter Category">
+    <input type="button" id="addP" value="Add Product" onclick="addProduct()" style="display:inline ;">
+    <input type="button" id="updateP" value="Update Product" onclick="updateProduct()" style="display: none;">
+   <hr>
+    <div id="mainDiv">
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
