@@ -1,0 +1,23 @@
+.row1 , .row2,.row3,.row4,.row5,.row6,.row7,.row8{
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 640px;
+    height: 80px;
+    background-color: aliceblue;
+    display: flex;
+}
+.odd1{
+    background-color: burlywood;
+    width: 80px ;
+    height: 80px;
+}
+.even1{
+    background-color: antiquewhite;
+    width: 80px;
+    height: 80px;
+}
+.i{
+    padding: 8px;
+
+}
