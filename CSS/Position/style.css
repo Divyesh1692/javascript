@@ -1,0 +1,30 @@
+.in{
+    z-index: -1;
+    height: 400px;
+    width: 600px;
+    background-image: url(https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg);
+    background-size: cover;
+    position: relative;
+    top: 30px;
+}
+.txt{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+.txt2{
+    position: absolute;
+    top: 750px;
+    left: 50px;
+}
+.txt3{
+    position: absolute;
+    top: 1150px;
+    left: 50px;
+}
+.nav{
+    padding: 5px;
+    width: 590px;
+    background-color: rgba(0, 0, 0, 0.477);;
+    position: fixed;
+}
