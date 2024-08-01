@@ -19,5 +19,11 @@
 }
 .i{
     padding: 8px;
-
+    transition: width 5s, height 5s;
+}
+.i:hover{
+    background-color: rgba(0, 0, 0, 0.238);
+    width: 81px;
+    height: 81px;
+    padding: 0px;
 }
