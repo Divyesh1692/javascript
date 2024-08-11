@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=996&t=st=1723222283~exp=1723222883~hmac=db4321330a193199e7b45ac646193ddf21bdb12285b5eb398a1f8298a059d6cd")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px rgba(red,green,blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+.form-group{
+    width: 330px;
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 3px solid white;
+    
+}
+
+.form-group input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 1.2em;
+    color: #fff;
+    padding: 0 30px 0 10px;
+
+}
+
+.form-group label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.form-group i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+p>a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+#btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=996&t=st=1723222283~exp=1723222883~hmac=db4321330a193199e7b45ac646193ddf21bdb12285b5eb398a1f8298a059d6cd")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 380px;
+    width: 400px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(red,green,blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+.inp{
+    width: 350px;
+    margin: 10px 0;
+    position: relative;
+    border-bottom: 3px solid white;
+    
+
+}
+
+.inp input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 30px 0 10px;
+    color: white;
+}
+
+.inp i{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    color: white;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+.p{
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.p>a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn{
+    width: 80%;
+    height: 45px;
+    border-radius: 35px;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 10%;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+}

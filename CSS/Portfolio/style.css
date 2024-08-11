@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;      
+}
+
+.container1{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5vh;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2vh;
+    color: #fff;
+    position: relative;
+}
+
+.left,.right{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+background: #262525;
+width: 70%;
+padding-left: 5vh;
+}
+
+.right{
+background: linear-gradient(-45deg, #3877ff,#262525 70%);
+width: 30%;
+}
+
+.icons .fa-brands{
+    color: white ;
+    font-size: 5vh;
+
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#5db9ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons{
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.content{
+    margin-left: 5vh;
+}
+.content .intro{
+    font-size: 5vh;
+    color: white;
+}
+
+.content .intro span{
+    color: #5db9ee;
+}
+
+.content h1{
+    font-size: 8vh;
+    color: #5db9ee;
+}
+
+.content .desc{
+    font-size: 3vh;
+    color:white;
+    max-width: 80vh;
+    margin: 1.5vh 0 3vh 0;
+    line-height: 5vh;
+} 
+
+.btn button{
+    border: .3vh solid #5db9ee;
+    font-size: 2vh;
+    padding: 1.5vh;
+    border-radius: 5px;
+    transition: .5s ease;
+
+}
+
+button:nth-child(1){
+    background-color: #5db9ee;
+}
+button:nth-child(1):hover{
+    background:transparent ;
+    color: white;
+}
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("image/3d\ men.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1rem solid white   ;
+    box-shadow: 
+    0 0 1rem #fff, 
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877ff
+    ;
+}
+
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
