@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(image/background.jpg);
+    background-image: url(image/imgback.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -13,47 +14,82 @@ body{
 }
 
 .card{
-    background-image: url(image/imgback.jpg);
+    background-image: url(image/rm222batch2-mind-03.jpg);
     margin-top: 160px;
     width: 800px;
     height: 400px;
-    border: 1px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 30px;
     padding: 20px;
     display: flex;
     background-color: rgb(216, 216, 33);
-    color: rgb(255, 255, 255);
+    color: rgb(45, 51, 56);
     position: relative;
+    transition: scale 0.5s;
+    font-family: sans-serif;
+    
+}
+
+.card:hover{
+    scale: 105%;
+}
+.name h4:nth-child(1){
+    font-size: 50px;
+    padding-bottom: 30px;
 }
 
 .name{
-    font-size: 30px;
-    line-height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 .about{
     max-height: 120px;
     position: absolute;
-    margin-top: 220px;
+    margin-top: 185px;
+    
+}
+
+.about p{
+    margin-top: 10px;
     overflow: auto;
-    scrollbar-color: rgb(250, 250, 250) rgba(12, 8, 82, 0);
+    scrollbar-color: rgb(0, 0, 0) rgba(12, 8, 82, 0);
     scrollbar-width: thin;
+    max-height: 120px;
+    font-family: sans-serif;
+    margin-right: 17px;
 }
 
 .about h4{
+    font-family: sans-serif;
     font-size: 30px;
 }
 
 .image{
-    margin-left: 300px;
+    margin-top: -8px;
+    margin-left: 120px;
+    
+}
+
+.image img:hover{
+    scale: 105%;
 }
 
 .image img{
-    border-radius: 20%;
+    transition: scale 0.5s;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .social{
     position: absolute;
-    margin-left: 635px;
-    margin-top: 190px;
+    margin-left: 720px;
+    
+    margin-top: 77px;
+}
+
+.social img:hover{
+    transition: 0.5s;
+    scale: 105%;
 }
